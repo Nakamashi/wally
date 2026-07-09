@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Scene Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="viewer-page">
+  <header class="toolbar" aria-label="Image viewer controls">
+    <a class="toolbar-button toolbar-link" href="index.html">Back to menu</a>
+
+    <label class="scene-select-label" for="sceneSelect">Scene</label>
+    <select id="sceneSelect" class="scene-select" aria-label="Choose scene"></select>
+
+    <div class="toolbar-group" aria-label="Zoom controls">
+      <button class="toolbar-button" id="zoomOut" type="button" aria-label="Zoom out">−</button>
+      <button class="toolbar-button" id="zoomIn" type="button" aria-label="Zoom in">+</button>
+      <button class="toolbar-button" id="resetView" type="button">Reset view</button>
+      <button class="toolbar-button" id="fitView" type="button">Fit to screen</button>
+      <button class="toolbar-button" id="fullscreenToggle" type="button">Fullscreen</button>
+    </div>
+  </header>
+
+  <main class="viewer-main">
+    <div class="viewport" id="viewport" tabindex="0" aria-label="Scene image viewer">
+      <img id="sceneImage" class="scene-image" alt="" draggable="false">
+      <div class="viewer-message" id="viewerMessage" hidden></div>
+    </div>
+  </main>
+
+  <script src="viewer.js"></script>
+</body>
+</html>
