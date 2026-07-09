@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scene Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="menu-page">
+  <main class="menu-shell">
+    <header class="menu-header" aria-labelledby="page-title">
+      <p class="eyebrow">Image gallery</p>
+      <h1 id="page-title">Scene Viewer</h1>
+    </header>
+
+    <section class="scene-grid" id="sceneGrid" aria-label="Choose a scene">
+      <a class="scene-card" href="viewer.html?scene=museum">
+        <span class="scene-card__label">Museum</span>
+        <span class="scene-card__action">Open scene</span>
+      </a>
+      <a class="scene-card" href="viewer.html?scene=town">
+        <span class="scene-card__label">Town</span>
+        <span class="scene-card__action">Open scene</span>
+      </a>
+      <a class="scene-card" href="viewer.html?scene=train-station">
+        <span class="scene-card__label">Train Station</span>
+        <span class="scene-card__action">Open scene</span>
+      </a>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
